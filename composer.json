@@ -1,5 +1,5 @@
 {
-    "name": "silvershop/cookieconsent",
+    "name": "silvershop-suite/cookieconsent",
     "description": "A first-class, self-hosted consent-management platform (CMP) for SilverStripe: an accessible cookie banner + in-banner preferences centre, a server + JS consent-state API ($HasConsent), true script/tag blocking, Google Consent Mode v2 signalling and an immutable consent log. Works on any SilverStripe 6 site - no shop dependency.",
     "type": "silverstripe-vendormodule",
     "keywords": ["silverstripe", "silvershop", "gdpr", "cookie", "consent", "cmp", "privacy", "consent-mode"],
@@ -31,7 +31,7 @@
         "tractorcow/silverstripe-fluent": "Localises the banner copy and the cookie declaration (categories + cookies).",
         "symbiote/silverstripe-gridfieldextensions": "Adds drag-and-drop ordering to the cookie declaration in the CMS.",
         "symbiote/silverstripe-queuedjobs": "Schedules the immutable consent-log retention prune as a recurring job.",
-        "silvershop/analytics": "Consent bridge - statistics consent flips the analytics session flag with zero coupling."
+        "silvershop-suite/analytics": "Consent bridge - statistics consent flips the analytics session flag with zero coupling."
     },
     "scripts": {
         "test": "vendor/bin/phpunit",

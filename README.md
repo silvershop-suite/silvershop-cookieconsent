@@ -1,4 +1,4 @@
-# silvershop/cookieconsent
+# silvershop-suite/cookieconsent
 
 A first-class, **self-hosted consent-management platform (CMP)** for SilverStripe. It turns a GDPR cookie bar into a
 consent *framework*: a configurable category taxonomy, a CMS-managed cookie declaration, a server + JS **consent-state
@@ -10,7 +10,7 @@ in-banner preferences centre.
   cookie consent is site-wide by nature.
 - **The theme hosts and styles the banner; the module owns the content and behaviour.** The default banner template is
   framework-neutral, token-driven (`--cc-*` custom properties, `em` units) and fully overridable. It is reconciled with
-  the `silvershop/storefront` banner markup (`#consent` / `.consent__*` / `data-consent="…"`), so a theme can host its own
+  the `silvershop-suite/storefront` banner markup (`#consent` / `.consent__*` / `data-consent="…"`), so a theme can host its own
   region and this module simply drives it.
 - **No IAB TCF.** This is a first-party, self-hosted CMP, not an ad-tech consent-string vendor.
 
@@ -24,12 +24,12 @@ Optional (feature-detected, never required):
 - `tractorcow/silverstripe-fluent` — localises the banner copy and the cookie declaration.
 - `symbiote/silverstripe-gridfieldextensions` — drag-and-drop ordering of the cookie declaration.
 - `symbiote/silverstripe-queuedjobs` — schedule the consent-log retention prune.
-- `silvershop/analytics` — the statistics-consent session bridge lights up automatically.
+- `silvershop-suite/analytics` — the statistics-consent session bridge lights up automatically.
 
 ## Install
 
 ```bash
-composer require silvershop/cookieconsent
+composer require silvershop-suite/cookieconsent
 ```
 
 Run `dev/build?flush=1`, then switch consent on under **CMS → Settings → Cookie consent** and manage the declaration +
@@ -134,7 +134,7 @@ open and returns on close, and animation honours `prefers-reduced-motion`.
 
 ## The storefront bridge
 
-`silvershop/analytics` already gates tracking on an `analytics_consent` session flag. This module writes exactly that
+`silvershop-suite/analytics` already gates tracking on an `analytics_consent` session flag. This module writes exactly that
 flag when `statistics` consent changes (`ConsentState.session_keys`), so analytics reacts with **zero** code changes.
 Map other categories to other modules’ session keys the same way.
 
