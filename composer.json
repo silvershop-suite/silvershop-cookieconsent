@@ -53,7 +53,7 @@
             "client/dist/styles"
         ],
         "branch-alias": {
-            "dev-main": "6.x-dev"
+            "dev-main": "1.x-dev"
         }
     },
     "autoload": {
