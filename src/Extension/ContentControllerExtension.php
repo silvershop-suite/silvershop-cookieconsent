@@ -67,7 +67,7 @@ class ContentControllerExtension extends Extension
             'SilverShopConsentConfig'
         );
 
-        $module = ModuleLoader::getModule('silvershop/cookieconsent');
+        $module = ModuleLoader::getModule('silvershop-suite/cookieconsent');
         if (!$module) {
             return;
         }
