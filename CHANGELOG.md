@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to `silvershop/cookieconsent` are documented here. The format follows
+All notable changes to `silvershop-suite/cookieconsent` are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/) and the project adheres to Semantic Versioning.
 
 ## [1.0.1] — 2026-10-13
@@ -30,7 +30,7 @@ All notable changes to `silvershop/cookieconsent` are documented here. The forma
 - **Template + JS API.** `$HasConsent('statistics')` / `$CookieConsentNeedsPrompt` / `$CookieConsentVersion` template
   globals; `window.SilverShopConsent` (`has`/`grantAll`/`rejectAll`/`save`/`open`/`close`) + a `consentchange` event.
 - **Accessible banner + in-banner preferences centre.** Framework-neutral, token-driven, overridable template reconciled
-  with the `silvershop/storefront` markup (`#consent` / `.consent__*` / `data-consent`); Esc, focus management, no
+  with the `silvershop-suite/storefront` markup (`#consent` / `.consent__*` / `data-consent`); Esc, focus management, no
   pre-ticked boxes, reject kept as prominent as accept, `prefers-reduced-motion`. Zero-config JS injection when no theme
   banner is present.
 - **Script / tag blocking.** `type="text/plain" data-consent-category` activation on consent + on `consentchange`; a
@@ -44,7 +44,7 @@ All notable changes to `silvershop/cookieconsent` are documented here. The forma
 - **Re-consent / versioning.** `consent_version`, `consent_lifetime_days` (default ~6 months) and a post-reject
   suppression window.
 - **Analytics bridge.** `ConsentState.session_keys` mirrors `statistics` consent onto the `analytics_consent` session
-  flag that `silvershop/analytics` already gates on — zero coupling.
+  flag that `silvershop-suite/analytics` already gates on — zero coupling.
 - i18n in en, nl, de, fr, es, it. CI (PHP 8.3 + 8.4), phpcs (PSR-12), phpstan (silverstan L5), phpunit.
 
 ### Deferred (roadmap)

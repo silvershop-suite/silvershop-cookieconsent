@@ -145,7 +145,7 @@ class ConsentState
 
     /**
      * Soft bridge: map a category to a session key sibling modules gate on.
-     * Defaults to the silvershop/analytics contract (statistics ->
+     * Defaults to the silvershop-suite/analytics contract (statistics ->
      * analytics_consent). Harmless when nothing reads the key.
      *
      * @var array<string,string>
@@ -563,7 +563,7 @@ class ConsentState
     /**
      * Soft analytics / marketing bridge: mirror each mapped category's granted
      * state onto its session key, so sibling modules that gate on the session
-     * (e.g. silvershop/analytics' `analytics_consent`) react with zero coupling.
+     * (e.g. silvershop-suite/analytics' `analytics_consent`) react with zero coupling.
      *
      * @param array<int,string> $granted granted category keys
      */

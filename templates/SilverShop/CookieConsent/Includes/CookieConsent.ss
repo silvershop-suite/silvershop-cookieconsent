@@ -1,7 +1,7 @@
 <%-- SilverShop Cookie Consent — default banner + in-banner preferences centre.
 
      Framework-neutral and token-driven. The markup, ids and data-consent hooks
-     are reconciled with the silvershop/storefront banner so a theme can host its
+     are reconciled with the silvershop-suite/storefront banner so a theme can host its
      own #consent region and this module just drives it; override this template in
      your theme (templates/SilverShop/CookieConsent/Includes/CookieConsent.ss) to
      restyle.

@@ -1,7 +1,7 @@
 {
     "name": "silvershop-cookieconsent",
     "version": "1.0.0",
-    "description": "Client asset build for the silvershop/cookieconsent module.",
+    "description": "Client asset build for the silvershop-suite/cookieconsent module.",
     "type": "module",
     "private": true,
     "scripts": {
